@@ -1,0 +1,18 @@
+{
+  "name": "Lightdesk",
+  "short_name": "Lightdesk",
+  "description": "PC와 휴대폰에서 함께 쓰는 가벼운 업무 목록",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fafbf8",
+  "theme_color": "#315c46",
+  "icons": [
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
