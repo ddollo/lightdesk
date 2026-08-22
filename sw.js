@@ -1,4 +1,4 @@
-const CACHE = "lightdesk-shell-v6";
+const CACHE = "lightdesk-shell-v7";
 const SHELL = ["./", "./index.html", "./manifest.webmanifest", "./favicon.svg"];
 
 self.addEventListener("install", (event) => {
