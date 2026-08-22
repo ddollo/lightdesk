@@ -20,8 +20,8 @@
   <main id="auth" class="center"><section class="auth"><div class="mark"></div><h1>Lightdesk</h1><p>PC와 휴대폰에서 같은 업무 목록을 사용하세요.</p><form id="authForm"><label>이메일<input id="email" type="email" required autocomplete="email"></label><label>비밀번호<input id="password" type="password" required minlength="6" autocomplete="current-password"></label><button class="submit" type="submit">로그인</button></form><button id="authSwitch" class="switch" type="button">처음이신가요? 회원가입</button><div id="authMsg" class="msg"></div></section></main>
   <main id="app" class="app hidden"><header class="top"><div><p id="date" class="date"></p><h1>오늘 <span id="count">0 / 0</span></h1></div><div class="actions"><span id="userEmail"></span><button id="logout" type="button">로그아웃</button><button id="addCategory" class="addcat" type="button">＋ 카테고리</button></div></header><div id="notice" class="notice hidden"></div><section id="grid" class="grid"></section></main>
   <script>
-    const BASE='https://jrblfeqkaboahefzevwq.supabase.co';
-    const KEY='sb_publishable_eP_R6Pau5NGxLuBlOQhFCw_IfhVMnAw';
+    const BASE='https://rrhvcotzvyzypusapkpy.supabase.co';
+    const KEY='sb_publishable_JyzZo3tYGxuiy7hO9-rS7w_wS4y2pte';
     const $=s=>document.querySelector(s); let signup=false, session=null, categories=[], tasks=[], editor=null, menus=null, priorities={}, widgetIds=new Set(JSON.parse(localStorage.getItem('lightdesk_widget_ids')||'[]').map(String));
     const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
     function saveSession(v){session=v;v?localStorage.setItem('lightdesk_session',JSON.stringify(v)):localStorage.removeItem('lightdesk_session');if(window.AndroidWidget){v?.access_token?AndroidWidget.saveSession(v.access_token):AndroidWidget.clearSession()}}
